@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: sans-serif;
+    color: #fafafa;
+}
+body {
+    background-color: #0e0e0e;
+}
+
+.content {
+    display: grid;
+    align-items: initial;
+    align-self: middle;
+    position: relative;
+}
+
+.body-inner {
+    min-height: 100%;
+    margin-bottom: -40px;
+}
+.body-inner::after {
+    content: "";
+    display: block;
+}
+
+.github {
+    background-color: transparent;
+    background-image: url("./img/github.svg");
+}
+
+.youtube {
+    background-color: transparent;
+    background-image: url("./img/youtube.svg");
+}
+
+.container {
+    display: grid;
+    align-items: center;
+}
+
+#barra {
+    display: inline-flex;
+    border-radius: 5%;
+    size: 20px;
+    height: 30px;
+    width: 300px;
+    align-items: center;
+    font-family: monospace !important;
+    color:#0e0e0e;
+    background-color: #242424;
+    transition: all 0.2s ease;
+}
+#barra:hover {
+    width: 340px;
+    color: #bbb;
+    transition: all 0.2s ease;
+}
+
+#barra:focus {
+    border-color: transparent;
+    
+    transition: all 0.2s ease;
+}
+
+#searchbtn {
+    align-items: right !important;
+    border-radius: 15%;
+    color: white;
+    background-color: #020202;
+    font-family: cursive !important;
+}
+
+footer {
+    left: 0;
+    height: 40px;
+    height: 2.5rem;
+    width: 100%;
+    bottom: 0;
+}
